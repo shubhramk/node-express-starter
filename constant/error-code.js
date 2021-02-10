@@ -1,0 +1,36 @@
+const ErrorCode = {
+    UNKNOWN: {
+      TYPE: "Unknown",
+      GENERIC: 0,
+    },
+    RESOURCE: {
+      TYPE: "Resource",
+      GENERIC: 1000,
+      INVALID_URL: 1001,
+      NOT_FOUND: 1002,
+      DUPLICATE_RESOURCE: 1003,
+      INVALID_REQUEST: 1004,
+      INVALID_EMAIL: 1005,
+      INVALID_NAME: 1006,
+      INVALID_PASSWORD: 1007,
+      USER_NOT_FOUND: 1008,
+      IMAGE_UPLOAD_ERROR: 1009
+    },
+    AUTHENTICATION: {
+      TYPE: "Unknown",
+      GENERIC: 1100,
+      VIOLATE_RFC6750: 1101,
+      TOKEN_NOT_FOUND: 1102,
+      INVALID_AUTHORIZATION_HEADER: 1103,
+      ACCOUNT_NOT_FOUND: 1104,
+      WRONG_USER_NAME_OR_PASSWORD: 1105,
+      INVALID_TOKEN: 1106,
+      TOKEN_EXPIRE: 1107,
+      NEED_ACCESS_CODE: 1108,
+      INVALID_CODE: 1109,
+      ALREADY_ACTIVE: 1110,
+      INVALID_ACTION: 1111,
+    }
+  }
+
+module.exports = ErrorCode;
